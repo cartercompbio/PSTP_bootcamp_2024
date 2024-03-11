@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to the Triton Shared Computing Cluster (TSCC) Usage Guide! This manual is crafted to assist students in effectively harnessing the power of TSCC for their computational endeavors.
+Welcome to the Triton Shared Computing Cluster (TSCC) Usage Guide! This manual is crafted to assist students in effectively harnessing the power of TSCC for computational needs.
 
 ## Getting Started
 
