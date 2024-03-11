@@ -28,7 +28,9 @@ Welcome to the Triton Shared Computing Cluster (TSCC) Usage Guide! This manual i
 
 #### Installation
 - Execute the script: `bash Anaconda3-2024.02-1-Linux-x86_64.sh`
-- Follow the on-screen prompts to complete the installation.
+- Follow the on-screen prompts to install anaconda into an "anaconda3" folder in your local directory.
+- 
+- 
 
 ### Step 4: Job Submission
 - Example: Executing a "Hello World" Python script.
@@ -47,4 +49,4 @@ Welcome to the Triton Shared Computing Cluster (TSCC) Usage Guide! This manual i
     - `--qos=hotel`: Sets the Quality of Service.
     - `/bin/bash`: Initiates a Bash shell post-allocation.
 
-By following these streamlined steps, you'll be equipped to make the most out of TSCC for your computational projects.
+### Step 6: Launching Jupyter on your interactive node.
