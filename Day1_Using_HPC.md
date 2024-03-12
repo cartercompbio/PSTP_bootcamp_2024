@@ -29,7 +29,7 @@ Welcome to the Triton Shared Computing Cluster (TSCC) Usage Guide! This manual i
 #### Installation
 - Execute the script: `bash Anaconda3-2024.02-1-Linux-x86_64.sh`
 - Follow the on-screen prompts to install anaconda into an "anaconda3" folder in your local directory.
-- 
+- Do you want to automatically initialize > yes
 - 
 
 ### Step 4: Job Submission
