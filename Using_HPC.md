@@ -34,7 +34,7 @@ Welcome to the Triton Shared Computing Cluster (TSCC) Usage Guide! This manual i
 
 ### Step 4: Creating an Anaconda Environment
 - **Command:** `conda create -n python_3_8 python=3.8`
-  - **Explanation:** This command creates a new environment named "myenv" with Python 3.8.
+  - **Explanation:** This command creates a new environment named "python_3_8" with Python 3.8.
 - **Command:** `conda activate python_3_8`
   - **Explanation:** This command activates the environment "python_3_8".
 - **Command:** `conda deactivate`
