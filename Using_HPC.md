@@ -32,19 +32,42 @@ Welcome to the Triton Shared Computing Cluster (TSCC) Usage Guide! This manual i
 - Do you want to automatically initialize > yes
 - type "conda" to verify installation
 
-### Step 4: Job Submission
+### Step 4: Creating an Anaconda Environment
+- **Command:** `conda create -n python_3_8 python=3.8`
+  - **Explanation:** This command creates a new environment named "myenv" with Python 3.8.
+- **Command:** `conda activate python_3_8`
+  - **Explanation:** This command activates the environment "python_3_8".
+- **Command:** `conda deactivate`
+  - **Explanation:** This command deactivates the current environment.
+
+### Step 5: Job Submission
 - Example: Executing a "Hello World" Python script.
 1. `mkdir scripts`
 2. `cd scripts`
 3. `mkdir hello_world`
-3. `vim hello.py`
-4. Go into insert mode by pressing "i".
-5. Type `print("Hello, World!")`.
-6. Press "esc" to exit insert mode.
-7. Type `:wq` to save and exit the file.
-8. 
+4. Let's practice transferring files onto TSCC.
+  Download the files `hello.py` and `run_hello.sb` from the `scripts/hello_world` folder in the repository.
 
-### Step 5: Interactive Node Request
+  Windows users:
+  - Go to your MobaXTerm.
+  Mac users:
+  - Go to your terminal.
+
+  We will use the command `scp` to transfer the files to TSCC.
+
+  Challenge: Change directories to your downloads folder using the command line.
+
+  To copy the hello.py file to TSCC, use the following command:
+  `scp hello.py user@login.tscc.sdsc.edu:scripts/hello_world`
+
+  Challenge: Copy the run_hello.sb file to TSCC using the same method.
+
+5. Go back to TSCC and navigate to the `scripts/hello_world` directory.
+6. Submit the job using the command: `sbatch run_hello.sb`
+7. Type `ls` to see the folders in this directory. (Hint) there is a file that was not there before.
+8. Check the contents of the file using the `head` command followed by the name of this new file.
+
+### Step 6: Interactive Node Request
 - Command: `srun --partition=hotel --pty --nodes=1 --ntasks-per-node=1 -t 00:30:00 --qos=hotel --wait=0 --export=ALL /bin/bash`
   - **Explanation of Parameters:**
     - `--partition=hotel`: Assigns the debug partition.
@@ -58,4 +81,3 @@ Welcome to the Triton Shared Computing Cluster (TSCC) Usage Guide! This manual i
     - `--qos=hotel`: Sets the Quality of Service.
     - `/bin/bash`: Initiates a Bash shell post-allocation.
 
-### Step 6: Launching Jupyter on your interactive node.
