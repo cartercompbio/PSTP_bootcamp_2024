@@ -48,9 +48,10 @@ Welcome to the Triton Shared Computing Cluster (TSCC) Usage Guide! This manual i
 4. Let's practice transferring files onto TSCC.
   Download the files `hello.py` and `run_hello.sb` from the `scripts/hello_world` folder in the repository.
 
-  Windows users:
+  **Windows users:**
   - Go to your MobaXTerm.
-  Mac users:
+
+  **Mac users:**
   - Go to your terminal.
 
   We will use the command `scp` to transfer the files to TSCC.
@@ -58,7 +59,9 @@ Welcome to the Triton Shared Computing Cluster (TSCC) Usage Guide! This manual i
   Challenge: Change directories to your downloads folder using the command line.
 
   To copy the hello.py file to TSCC, use the following command:
-  `scp hello.py user@login.tscc.sdsc.edu:scripts/hello_world`
+  `scp hello.py user@login.tscc.sdsc.edu:/tscc/nfs/home/yourtsccusername/scripts/hello_world`
+
+  For instance, my command is `scp drives/c/Users/amonell/Downloads/hello.py etrain104@login.tscc.sdsc.edu:/tscc/nfs/home/etrain104/scripts/hello_world`
 
   Challenge: Copy the run_hello.sb file to TSCC using the same method.
 
