@@ -49,5 +49,7 @@ While Bash is our primary focus, being aware of other scripting languages such a
 1. Navigate to your home directory and create a new directory named `bioinfo_projects`.
 2. Inside `bioinfo_projects`, create an empty file named `sample.txt`.
 3. Use `ls` to list all items within `bioinfo_projects` and `cat` to display the contents of `sample.txt`.
+4. Practice More with this Online Tutorial from [Linux Journey](https://linuxjourney.com/lesson/the-shell)
+
 
 Congratulations on completing this introductory module! You've taken your first step into the powerful world of command-line interfaces, a cornerstone of bioinformatics analysis.
