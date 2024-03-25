@@ -144,7 +144,7 @@ Save your work.
 
 #### Hook R up to Jupyter.
 - Run R with `R`.
-- Link R up to Jupyter with IRkernel::installspec()
+- Link R up to Jupyter with `IRkernel::installspec()`
 - Quit R with `q()`.
 
 #### Launch Jupyter in your r environment.
@@ -156,9 +156,7 @@ Save your work.
 
 #### Running R Code:
 - In the first cell of the new R notebook, try entering
-  `x <- 'Hello, World'
-  
-  `print(x)`
+  `x <- 'Hello, World \n print(x)`
 - Run the cell to execute the R code and observe the output.
 
 #### Install R Packages:
