@@ -4,8 +4,9 @@ Jupyter Notebooks offer a flexible and interactive environment for data analysis
 
 ### Launching Jupyter
 
-As we did in the HPC tutorial, let's launch Jupyter. Set the walltime to 1 hour 30 min.
+Similar to what we did in the HPC tutorial, let's launch Jupyter for Python using our python_3_8 conda environment. Set the walltime to 1 hour 30 min.
 
+'galyleo launch --account htl179 --qos hotel --cpus 1 --memory 8 --time-limit 01:30:00 --partition hotel --conda-env python3essential-1.99.0 --env-modules slurm/tscc/23.02.7 --conda-init /tscc/projects/ps-yeolab4/software/miniconda_tscc2/etc/profile.d/conda.sh'
 
 ### Exploring the Interface
 
