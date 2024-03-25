@@ -84,41 +84,31 @@ Welcome to the Triton Shared Computing Cluster (TSCC) Usage Guide! This manual i
     - `--qos=hotel`: Sets the Quality of Service.
     - `/bin/bash`: Initiates a Bash shell post-allocation.
 
-### Step 7: Launching Jupyter on the Interactive Node from a Conda Environment
+### Step 7: Launching Jupyter on an Interactive Node to run Python code
 
-1. **Create a Conda Environment:**
-   - Install Python 3.8 in your Conda environment. Refer to the Anaconda Environment instructions in Step 4.
+On your TSCC account in your base directory:
 
-2. **Activate the Conda Environment:**
-   - You can use the command `conda env list` to list your conda environments.
-   - Use the command `conda activate python_3_8` to activate the environment.
+`module load shared`
 
-4. **Install Jupyter in the Conda Environment:**
-   - Use pip, a package manager, to install Jupyter: `pip install jupyter`.
-     - **Note:** pip is used to install Python packages.
-     - **Note:** Jupyter provides a browser interface for executing Python code in chunks.
+`module load galyleo`
 
-5. **Launch Jupyter:**
-   - Ensure your interactive node is active (assuming your 30 min walltime hasn't expired).
-   - Check that the interactive node is active.
-   - Navigate to your base directory.
-   - Inside your Conda environment, run `jupyter notebook` to launch Jupyter.
+TSCC utilizes a bash script “Galyleo” to serve Jupyter notebooks more securely.
 
-6. **Create a New Folder in Jupyter:**
-   - Name the folder 'day_1'.
+`module load python3essential`
 
-7. **Create a New Python Notebook:**
-   - Inside the 'day_1' folder, create a new Python notebook named `hello_world`.
+`galyleo launch --account htl179 --qos hotel --cpus 1 --memory 8 --time-limit 00:30:00 --partition hotel --conda-env python3essential-1.99.0 --env-modules slurm/tscc/23.02.7 --conda-init /tscc/projects/ps-yeolab4/software/miniconda_tscc2/etc/profile.d/conda.sh`
 
-8. **Execute Python Code:**
-   - Add `print('Hello, World')` to the first cell of the notebook.
-   - Run the cell to execute the code.
+We are opening a Jupyter notebook in a conda environment with a bunch of important Python packages preinstalled. If you want to run Jupyter in your own environment, you would need to change the paths associated with 'conda' in the galyleo command. 
 
-9. **Save and Exit:**
-   - Save the notebook.
-   - Exit Jupyter by using Ctrl+C in your terminal.
+Create a new notebook called hello_notebook in your hello_world scripts folder from inside jupyter. 
+
+Specify that you are using a Python3 kernel.
+
+Type `print('Hello, World')` in the first cell and run the cell.
+
+Save your work.
      
-### Installing R Base in Your Conda Environment
+### Creating a conda environment to run R code.
 
 1. **Create a New Conda Environment for R (Optional):**
    - If you want a separate environment for R, create a new one using: `conda create -n r_env`
@@ -149,16 +139,25 @@ Welcome to the Triton Shared Computing Cluster (TSCC) Usage Guide! This manual i
 - Inside your Conda environment with r-base installed, install the IRkernel package by running `conda install -c r r-irkernel`.
 - This will allow Jupyter to run R code in addition to Python.
 
-#### Launch Jupyter Notebook:
-- Ensure that Jupyter is still installed in your Conda environment.
-- Launch Jupyter by running `jupyter notebook` from your terminal within the Conda environment.
+#### Install Jupyter:
+- `pip install jupyter`.
+
+#### Hook R up to Jupyter.
+- Run R with `R`.
+- Link R up to Jupyter with IRkernel::installspec()
+- Quit R with `q()`.
+
+#### Launch Jupyter in your r environment.
+- galyleo launch --account htl179 --qos hotel --cpus 1 --memory 8 --time-limit 00:30:00 --partition hotel --conda-env r_env --env-modules slurm/tscc/23.02.7 --conda-init /tscc/nfs/home/etrain104/anaconda/etc/profile.d/conda.sh
 
 #### Create a New R Notebook:
-- Once Jupyter is open in your browser, select 'New' at the top right corner.
-- From the dropdown, choose 'R' to create a new R notebook.
+- Create a new notebook and name it `hello_world_r.ipynb`.
+- Set the kernel to an R kernel.
 
 #### Running R Code:
-- In the first cell of the new R notebook, try entering `print('Hello, R World!')`.
+- In the first cell of the new R notebook, try entering
+  `x <- 'Hello, World'
+  `print(x)`
 - Run the cell to execute the R code and observe the output.
 
 #### Install R Packages:
@@ -170,9 +169,3 @@ Welcome to the Triton Shared Computing Cluster (TSCC) Usage Guide! This manual i
 - Regularly save your notebook to prevent losing your work.
 - Jupyter notebooks autosave, but it's a good habit to manually save as well.
 
-#### Exit Jupyter Notebook:
-- When you're finished, you can close the browser tab.
-- To completely shut down the Jupyter server, return to your terminal and press Ctrl+C.
-
-#### Deactivate the Conda Environment:
-- After exiting Jupyter, deactivate your Conda environment by typing `conda deactivate` in your terminal. This will return you to your base environment or system shell.
