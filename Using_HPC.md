@@ -87,7 +87,7 @@ Welcome to the Triton Shared Computing Cluster (TSCC) Usage Guide! This manual i
 ### Step 7: Launching Jupyter on the Interactive Node from a Conda Environment
 
 1. **Create a Conda Environment:**
-   - Install Python 3.8 in your Conda environment. Refer to the Anaconda Installation instructions in Step 3.
+   - Install Python 3.8 in your Conda environment. Refer to the Anaconda Environment instructions in Step 4.
 
 2. **Activate the Conda Environment:**
    - Use the command `conda activate python3_8` to activate the environment.
