@@ -84,3 +84,35 @@ Welcome to the Triton Shared Computing Cluster (TSCC) Usage Guide! This manual i
     - `--qos=hotel`: Sets the Quality of Service.
     - `/bin/bash`: Initiates a Bash shell post-allocation.
 
+### Step 7: Launching Jupyter on the Interactive Node from a Conda Environment
+
+1. **Create a Conda Environment:**
+   - Install Python 3.8 in your Conda environment. Refer to the Anaconda Installation instructions in Step 3.
+
+2. **Activate the Conda Environment:**
+   - Use the command `conda activate python3_8` to activate the environment.
+
+3. **Install Jupyter in the Conda Environment:**
+   - Use pip, a package manager, to install Jupyter: `pip install jupyter`.
+     - **Note:** pip is used to install Python packages.
+     - **Note:** Jupyter provides a browser interface for executing Python code in chunks.
+
+4. **Launch Jupyter:**
+   - Ensure your interactive node is active (assuming your 30 min walltime hasn't expired).
+   - Check that the interactive node is active.
+   - Navigate to your base directory.
+   - Inside your Conda environment, run `jupyter notebook` to launch Jupyter.
+
+5. **Create a New Folder in Jupyter:**
+   - Name the folder 'day_1'.
+
+6. **Create a New Python Notebook:**
+   - Inside the 'day_1' folder, create a new Python notebook named `hello_world`.
+
+7. **Execute Python Code:**
+   - Add `print('Hello, World')` to the first cell of the notebook.
+   - Run the cell to execute the code.
+
+8. **Save and Exit:**
+   - Save the notebook.
+   - Exit Jupyter by using Ctrl+C in your terminal.
