@@ -156,7 +156,10 @@ Save your work.
 
 #### Running R Code:
 - In the first cell of the new R notebook, try entering
-  `x <- 'Hello, World \n print(x)`
+  Line 1:
+  `x <- 'Hello, World' `
+  Line 2:
+  `print(x)`
 - Run the cell to execute the R code and observe the output.
 
 #### Install R Packages:
