@@ -6,12 +6,13 @@ Jupyter Notebooks offer a flexible and interactive environment for data analysis
 
 Similar to what we did in the HPC tutorial, let's launch Jupyter for Python using our python_3_8 conda environment. Set the walltime to 1 hour 30 min.
 
-'galyleo launch --account htl179 --qos hotel --cpus 1 --memory 8 --time-limit 01:30:00 --partition hotel --conda-env python3essential-1.99.0 --env-modules slurm/tscc/23.02.7 --conda-init /tscc/projects/ps-yeolab4/software/miniconda_tscc2/etc/profile.d/conda.sh'
+'galyleo launch --account htl179 --qos hotel --cpus 1 --memory 8 --time-limit 01:30:00 --partition hotel --conda-env python_3_8 --env-modules slurm/tscc/23.02.7 --conda-init /tscc/nfs/home/etrain104/anaconda/etc/profile.d/conda.sh'
 
 ### Exploring the Interface
 
 - When you first open a Jupyter Notebook, you'll see a user-friendly interface where you can write and execute code and text.
-- Take some time to explore the menus and familiarize yourself with the command palette, accessible via the keyboard icon or `Ctrl + Shift + P`.
+- Make a folder called `jupyter_tutorial` and start a new Python notebook inside of it.
+- Jupyter will open in whatever directory you are located in when it is launched. 
 
 ### Understanding Cells and Kernels
 
@@ -27,6 +28,8 @@ Similar to what we did in the HPC tutorial, let's launch Jupyter for Python usin
 
 - Type `print('Hello World!')` into a code cell and execute it (using the run button or `Ctrl + Enter`). You should see the output displayed below the cell.
 
+Challenge: Figure out how to run a Markdown cell. 
+
 ### Keyboard Shortcuts
 
 - Jupyter offers numerous keyboard shortcuts that can speed up your workflow:
@@ -34,7 +37,7 @@ Similar to what we did in the HPC tutorial, let's launch Jupyter for Python usin
   - `A`/`B`: Insert a new cell above/below the active cell.
   - `M`: Change the cell to Markdown.
   - `Y`: Change the cell to code.
-  - `D + D`: Delete the active cell.
+  - `D + D`: Delete the active cell. (d twice)
   - `Z`: Undo cell deletion.
 
 ## Markdown Basics
@@ -45,6 +48,8 @@ Similar to what we did in the HPC tutorial, let's launch Jupyter for Python usin
 - **Lists:** Use `-` or `1.` to create bulleted or numbered lists.
 - **Links:** Use `[text](URL)` to create hyperlinks.
 - **Code:** Use backticks (`) to format code within text.
+
+Challenge: Make the above paragraph in jupyter.
 
 ## Kernels
 
