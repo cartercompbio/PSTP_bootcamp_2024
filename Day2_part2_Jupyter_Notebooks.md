@@ -1,10 +1,11 @@
 # Jupyter Notebook Tutorial
 
-Jupyter Notebooks offer a flexible and interactive environment for data analysis and visualization in Python, among other languages. This tutorial will guide you through the basics of Jupyter Notebook, an essential tool in data science and scientific computing.
+Jupyter Notebooks offer a flexible and interactive environment for data analysis and visualization in Python, R and other languages. This tutorial will guide you through the basics of Jupyter Notebook, an essential tool in data science and scientific computing.
 
-## The Notebook Interface
+### Launching Jupyter
 
-Jupyter Notebooks is an advanced word processor that's ideal for data analysis. It's not just for Python code; you can also integrate Markdown, HTML, and more to create rich, interactive documents.
+As we did in the HPC tutorial, let's launch Jupyter. Set the walltime to 1 hour 30 min.
+
 
 ### Exploring the Interface
 
