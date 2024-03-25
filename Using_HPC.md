@@ -90,29 +90,89 @@ Welcome to the Triton Shared Computing Cluster (TSCC) Usage Guide! This manual i
    - Install Python 3.8 in your Conda environment. Refer to the Anaconda Environment instructions in Step 4.
 
 2. **Activate the Conda Environment:**
-   - Use the command `conda activate python3_8` to activate the environment.
+   - You can use the command `conda env list` to list your conda environments.
+   - Use the command `conda activate python_3_8` to activate the environment.
 
-3. **Install Jupyter in the Conda Environment:**
+4. **Install Jupyter in the Conda Environment:**
    - Use pip, a package manager, to install Jupyter: `pip install jupyter`.
      - **Note:** pip is used to install Python packages.
      - **Note:** Jupyter provides a browser interface for executing Python code in chunks.
 
-4. **Launch Jupyter:**
+5. **Launch Jupyter:**
    - Ensure your interactive node is active (assuming your 30 min walltime hasn't expired).
    - Check that the interactive node is active.
    - Navigate to your base directory.
    - Inside your Conda environment, run `jupyter notebook` to launch Jupyter.
 
-5. **Create a New Folder in Jupyter:**
+6. **Create a New Folder in Jupyter:**
    - Name the folder 'day_1'.
 
-6. **Create a New Python Notebook:**
+7. **Create a New Python Notebook:**
    - Inside the 'day_1' folder, create a new Python notebook named `hello_world`.
 
-7. **Execute Python Code:**
+8. **Execute Python Code:**
    - Add `print('Hello, World')` to the first cell of the notebook.
    - Run the cell to execute the code.
 
-8. **Save and Exit:**
+9. **Save and Exit:**
    - Save the notebook.
    - Exit Jupyter by using Ctrl+C in your terminal.
+     
+### Installing R Base in Your Conda Environment
+
+1. **Create a New Conda Environment for R (Optional):**
+   - If you want a separate environment for R, create a new one using: `conda create -n r_env`
+   - Activate the new environment: `conda activate r_env`
+
+2. **Install R Base:**
+   - To install the R base package, run: `conda install -c r r-base`
+   - This command installs the R language in your Conda environment.
+
+3. **Verify R Installation:**
+   - After installation, you can verify the installation by running: `R --version`
+   - This command should show the R version installed, confirming that the installation is successful.
+
+4. **Installing R Packages:**
+   - To install an R package, you can start R in the terminal by just typing: `R`
+   - Once in the R console, install packages using: `install.packages('package_name')`
+
+5. **Exiting R:**
+   - To exit the R console, type: `quit()`
+   - Save workspace image? [y/n/c]: Choose 'n' if you do not want to save or 'y' to save.
+
+6. **Deactivate Conda Environment:**
+   - Once you are done, you can deactivate your Conda environment by typing: `conda deactivate`
+
+### Step 8: Running R code in a Jupyter notebook
+
+#### Install the R Kernel:
+- Inside your Conda environment with r-base installed, install the IRkernel package by running `conda install -c r r-irkernel`.
+- This will allow Jupyter to run R code in addition to Python.
+
+#### Launch Jupyter Notebook:
+- Ensure that Jupyter is still installed in your Conda environment.
+- Launch Jupyter by running `jupyter notebook` from your terminal within the Conda environment.
+
+#### Create a New R Notebook:
+- Once Jupyter is open in your browser, select 'New' at the top right corner.
+- From the dropdown, choose 'R' to create a new R notebook.
+
+#### Running R Code:
+- In the first cell of the new R notebook, try entering `print('Hello, R World!')`.
+- Run the cell to execute the R code and observe the output.
+
+#### Install R Packages:
+- If you need additional R packages, you can install them directly in the notebook.
+- Use the command `install.packages('package_name')` in a cell to install a package.
+- Load the package using `library(package_name)`.
+
+#### Save Your Work:
+- Regularly save your notebook to prevent losing your work.
+- Jupyter notebooks autosave, but it's a good habit to manually save as well.
+
+#### Exit Jupyter Notebook:
+- When you're finished, you can close the browser tab.
+- To completely shut down the Jupyter server, return to your terminal and press Ctrl+C.
+
+#### Deactivate the Conda Environment:
+- After exiting Jupyter, deactivate your Conda environment by typing `conda deactivate` in your terminal. This will return you to your base environment or system shell.
