@@ -22,7 +22,7 @@ Here is a compliation of quick reference sheets as well as more complete referen
 * [Data Visualization with ggplot2](https://rstudio.github.io/cheatsheets/html/data-visualization.html)
 * [Markdown Documents in R](https://rstudio.github.io/cheatsheets/html/rmarkdown.html)
 
-Posit also has a variety of other cheat sheets (using Keras for Machine learning, Connecting to Apache Spark with R, Shiny for dashboard development, etc). I just listed the ones I found most relevant here
+Rstudio's site also has a variety of other cheat sheets (using Keras for Machine learning, Connecting to Apache Spark with R, Shiny for dashboard development, etc). I just listed the ones I found most relevant here
 
 ## Reference Books
 
