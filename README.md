@@ -25,16 +25,13 @@ Questions or concerns? Please reach out by email.
 | ------------- | ------------- |------------- |------------- |------------- |
 |  | **Week 1**   | **Basics**: *Tools and environments for bioinformatics*  |  |  | 
 | 1  | 04/01/2024  | **Module 1**: Commandline, accessing HPC and running 3rd party tools  | [Day_1](https://github.com/cartercompbio/PSTP_bootcamp_2024/tree/main/Modules/Day_1)  | TAs | 
-| 2  | 04/02/2024  | **Module 2**: Obtaining data / Jupyter Notebooks  | [Day_2](https://github.com/cartercompbio/PSTP_bootcamp_2024/tree/main/Modules/Day_2)  | TAs | 
-| 3  | 04/03/2024  | **Module 3**: Basic coding and visualization  | [Day_3](https://github.com/cartercompbio/PSTP_bootcamp_2024/tree/main/Modules/Day_3)  | TAs |
-| 4  | 04/04/2024  | **Module 4**: Coding and analysis with GPT | [Day_4](https://github.com/cartercompbio/PSTP_bootcamp_2024/tree/main/Modules/Day_4)  | TAs |
-| 5  | 04/05/2024  | **Module 5**: A practical approach to debugging  | [Day_5](https://github.com/cartercompbio/PSTP_bootcamp_2024/tree/main/Modules/Day_5)  | TAs |
+| 2  | 04/02/2024  | **Module 2**: Jupyter Notebooks / Basic coding and visualization | [Day_2](https://github.com/cartercompbio/PSTP_bootcamp_2024/tree/main/Modules/Day_2)  | TAs | 
+| 3  | 04/03/2024  | **Module 3**: Coding and analysis with GPT | [Day_3](https://github.com/cartercompbio/PSTP_bootcamp_2024/tree/main/Modules/Day_3)  | TAs |
 |  | **Week 2**  | **Resources and Advanced Workflows**: *Introduction to campus resources for computational research*  |  |  | 
-| 1  | 04/08/2024  | **Module 6**: Intro to SDSC / Cloud Computing | [Day_6](https://github.com/PSTP_bootcamp_2024)  | Subhashini Sivagnanam / Cyd Burroughs Schilling | 
-| 2  | 04/09/2024  | **Module 7**: AllofUs Workbench  | [Day_7](https://github.com/PSTP_bootcamp_2024)  | Sally Baxter | 
-| 3  | 04/10/2024  | **Module 8**: Center for Computational Biology and Bioinformatics  | [Day_8](https://github.com/PSTP_bootcamp_2024)  | Brin Rosenthal |
-| 4  | 04/11/2024  | **Module 9**: Gene Pattern and the Integrative Genomics Viewer  | [Day_9](https://github.com/PSTP_bootcamp_2024)  | Michael Reich |
-| 5  | 04/12/2024  | **Module 10**: NDEx and Cytoscape  | [Day_10](https://github.com/PSTP_bootcamp_2024)  | Dexter Pratt |
+| 4  | 04/08/2024  | **Module 4**: Intro to SDSC / Cloud Computing | [Day_6](https://github.com/PSTP_bootcamp_2024)  | Subhashini Sivagnanam / Cyd Burroughs Schilling | 
+| 5  | 04/09/2024  | **Module 5**: NDex and Cytoscape / AllofUs Workbench  | [Day_7](https://github.com/PSTP_bootcamp_2024)  | Dexter Pratt / Sally Baxter  | 
+| 6  | 04/10/2024  | **Module 6**: Center for Computational Biology and Bioinformatics  | [Day_8](https://github.com/PSTP_bootcamp_2024)  | Brin Rosenthal |
+| 7  | 04/11/2024  | **Module 7**: Gene Pattern and the Integrative Genomics Viewer  | [Day_9](https://github.com/PSTP_bootcamp_2024)  | Michael Reich |
 
 Extra time will be used for the submitted projects.
 
