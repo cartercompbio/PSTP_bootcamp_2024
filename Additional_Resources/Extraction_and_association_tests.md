@@ -1,7 +1,7 @@
 # Running Association Tests with PLink from Bacterial VCF Data
 To run an association test with PLINK focusing on specific genes and their regions, first extract the variants from the needed regions of your VCF file. BAM files are typically used for mapping and variant calling processes; since you already have a VCF file, we'll focus on using that for your association test with PLINK. Here’s a step-by-step guide to achieve this:
 
-# Installing the necessary software with conda
+## Installing the necessary software with conda
 Creating a conda environment with both PLINK (a whole genome association analysis toolset) and BCFtools (for variant calling and manipulating VCFs and BCFs) can be quite straightforward. Here's how you can do it from your macOS Terminal. This guide assumes you have Anaconda or Miniconda installed on your macOS system. If not, you'll need to install one of those first.
 
 1. **Open Terminal**: You can find Terminal in your Applications > Utilities folder.
